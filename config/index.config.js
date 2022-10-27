@@ -24,7 +24,7 @@ const MINION_ENV                        = process.env.MINION_ENV
 const MASTER_NAME                       = process.env.MASTER_NAME
 
 const config                           = require(`./envs/${ENV}.js`);
-if(!MINION_TYPE || !MINION_ENV || !MASTER_NAME) throw Error('missing .env variables check index.config');
+if(!MINION_ENV || !MASTER_NAME) throw Error('missing .env variables check index.config');
 
 
 config.dotEnv = {

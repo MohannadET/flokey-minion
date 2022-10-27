@@ -32,8 +32,8 @@ class Environ {
             state: ()=>{
                 return {} 
             },
-            activeDelay: "1000ms",
-            idlDelay: "3000ms",
+            activeDelay: 1000,
+            idlDelay: 1000,
         });
         this.cortex.sub('env.*', (d, meta, cb)=>{
             this.interceptor({data:d, meta, cb});
